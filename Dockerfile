@@ -2,6 +2,8 @@ FROM debian:jessie
 
 MAINTAINER Muhlis BC "muhlisbc@gmail.com"
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN buildDeps=' \
 	ca-certificates \
 	nginx-full \
